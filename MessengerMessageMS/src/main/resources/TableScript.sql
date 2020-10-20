@@ -1,0 +1,12 @@
+create schema `JBMessenger-Message`;
+use `JBMessenger-Message`;
+
+CREATE TABLE MESSAGES(
+	MSG_ID INT AUTO_INCREMENT PRIMARY KEY,
+	SENDER_EMAIL VARCHAR(50) NOT NULL,
+	RECIPIENT_EMAIL VARCHAR(50) NOT NULL,
+	MESSAGE VARCHAR(200)
+);
+
+INSERT INTO MESSAGES (SENDER_EMAIL,RECIPIENT_EMAIL,MESSAGE) VALUES ('jimbrown@gmail.com','shino@gmail.com','Demo Messenger App Testing');
+INSERT INTO MESSAGES (SENDER_EMAIL,RECIPIENT_EMAIL,MESSAGE) VALUES ('shino@gmail.com','jimbrown@gmail.com','Hello How are you');
